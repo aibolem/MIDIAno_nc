@@ -11,7 +11,7 @@ export class PianoRender {
 		this.renderDimensions.registerResizeCallback(this.resize.bind(this))
 		this.clickCallback = null
 		this.blackKeyImg = new Image()
-		this.blackKeyImg.src = "../../blackKey.svg"
+		this.blackKeyImg.src = "blackKey.svg"
 		this.blackKeyImg.onload
 		this.positionY = 50 //from bottom
 
@@ -153,7 +153,7 @@ export class PianoRender {
 			this.drawWhiteKeyNames(ctxWhite)
 		}
 		// var img = new Image()
-		// img.src = "../../blackKey.svg"
+		// img.src = "blackKey.svg"
 		// img.onload = function () {
 		this.drawBlackKeys(ctxBlack)
 		if (getSetting("showKeyNamesOnPianoBlack")) {
