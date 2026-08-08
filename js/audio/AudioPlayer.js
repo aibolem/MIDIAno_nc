@@ -105,7 +105,7 @@ export class AudioPlayer {
 		let audioPl = this
 
 		const request = new XMLHttpRequest()
-		request.open("GET", "./../metronome/1.wav")
+		request.open("GET", "metronome/1.wav")
 		request.responseType = "arraybuffer"
 		request.onload = function () {
 			let undecodedAudio = request.response
@@ -117,7 +117,7 @@ export class AudioPlayer {
 		request.send()
 
 		const request2 = new XMLHttpRequest()
-		request2.open("GET", "./metronome/2.wav")
+		request2.open("GET", "metronome/2.wav")
 		request2.responseType = "arraybuffer"
 		request2.onload = function () {
 			let undecodedAudio = request2.response
